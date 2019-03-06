@@ -1,0 +1,32 @@
+<html>
+<head><title>Rellena tu CV</title></head>
+<body>
+
+<h3>Rellena tu CV</h3>
+
+<form action="http://www.librosweb.es/maneja_formulario.php" method="post">
+  Nombre:
+  <input type="text" name="Nombre" value="" maxlength="30" />
+<br/>
+  Apellidos:
+  <input type="text" name="Apellidos" value="" maxlength="80" />
+<br/>
+  Contrase&ntilde;a
+  <input type="password" name="Contrase&ntilde;a" value="" maxlength="10" />
+<br/>
+  DNI
+  <input type="text" name="DNI" value="" maxlength="9" minlength="9" pattern="[0-9][8][A-Z][1]"</>
+<br/>
+Sexo <br/>
+<input type="radio" name="sexo" value="hombre"/> Hombre<br/>
+<input type="radio" name="sexo" value="mujer" /> Mujer<br/>
+Incluir mi foto
+  <input type="file" name="Foto" value=""/>
+<br/>
+<input name="Boletin" type="checkbox" checked value=""/>Suscribirme al boletin de novedades
+<br/>
+  <input type="submit" value="Enviar" />
+  <input type="reset" name="Limpiar" value="Borrar datos introducidos">
+</form>
+</body>
+</html>

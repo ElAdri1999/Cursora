@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<style>
+	Table {
+		Border-collapse:collapse;
+}
+Table, td, th{
+	Border:1px solid gray;
+	Text-align:left;
+}
+</style>
+  <head>
+    <meta charset="utf-8">
+    <title>Ejercicio 3: Hotel TEL</title>
+  </head>
+  <body>
+  <h2>Hotel TEL</h2>
+  <legend>Reserva On-line</legend>
+    <table title="Hotel TEL Reserva On-line">
+    <form action="reserva.php" method="post">
+<tr>
+  <td>Nombre:</td>
+  <td><input type="text" name="Elemento_Nombre" value=""></td>
+</tr>
+<tr>
+  <td>Apellidos:</td>
+  <td><input type="text" name="Elemento_Apellidos" value=""></td>
+</tr>
+<tr>
+  <td>Teléfono:</td>
+  <td><input type="number" name="Elemento_Teléfono" value="" maxlength="9"></td>
+</tr>
+<tr>
+  <td>E-mail:</td>
+  <td><input type=email" ></td>
+</tr>
+<tr>
+  <td>Numero de noches:</td>
+  <td><input type="number" name="Elemento_Noches" value=""></td>
+</tr>
+  <tr>
+      <td>Fecha de entrada:</td>
+        <td><input type="date" name="Elemento_dia Elemento_mes" ></td>
+  </tr>
+  <tr>
+      <td><input type="radio" name="habitacion" value="Simple">
+        Habitacion Simple
+  <br>
+      <input type="radio" name="habitacion" value="Doble">
+      Habitacion Doble
+  <br>
+      <input type="radio" name="habitacion" value="Matrimonio">
+      Habitacion de Matrimonio
+  <br></td>
+  <td>
+    <input type="checkbox" name="Desayuno" value="Desayuno">
+    Desayuno
+    <br>
+    <input type="checkbox" name="Comida" value="Comida">
+    Comida
+    <br>
+    <input type="checkbox" name="Cena" value="Cena">
+    Cena
+    <br>
+    <input type="checkbox" name="Cama_Supletoria" value="Cama Supletoria">
+    Cama Supletoria
+    <br></td>
+    </tr>
+
+<tr>
+  <td colspan="2">Comentarios:  <input type="text" name="" value="" size="35"></td>
+</tr>
+<tr>
+  <td><input type="reset" name="limpiar" value="Borrar datos del formulario"></td>
+  <td><input type="submit" name="Enviar" value="Enviar"></td>
+</tr>
+</form>
+  </table>
+  </body>
+</html>
