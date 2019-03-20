@@ -1,0 +1,20 @@
+* {font-family: "Courir New", Courier, monospace; }
+li
+{color:red;}
+li li
+{color:green;}
+.example
+{color:white;
+background-color:blue;}
+#titulo
+{color:white;
+background-color:gray;}
+#selectores
+{color:black;
+background-color:pink;}
+.bordesolo
+{border:1px solid orange;}
+.sobreborder
+{border-bottom:1px solid grey }
+.bordeverde
+{border:5px solid green}
