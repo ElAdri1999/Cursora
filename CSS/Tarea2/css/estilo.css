@@ -1,8 +1,16 @@
-h4
-{color:pink;}
 h1
-{color:red;}
-li
-{color:blue;}
-h2
-{color:green;}
+{text-align: center;}
+#datospersonales
+{background-color: lightgrey;}
+legend
+{
+border-color: black;
+border-width: thin;
+border-style: solid;
+background-color: white}
+#formadeacceso
+{background-color: orange}
+#documentosadjuntados
+{background-color: red}
+ul
+{list-style-type: none}

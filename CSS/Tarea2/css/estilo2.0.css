@@ -1,0 +1,18 @@
+* {font-family: "Courir New", Courier, monospace; }
+h1
+{color:red;}
+/* */
+h4
+{color:pink;}
+li
+{color:blue;}
+h2
+{color:green;}
+#titulo {
+background-color:grey;
+color:white;
+}
+.ejemplo{
+background-color: blue;
+color:white;
+}
