@@ -15,24 +15,36 @@
     <legend>Datos Personales</legend>
     <table>
       <tr>
+        <thead>
+          Nombre,apellido y DNI
+        </thead>
         <td><label for="nombre">Nombre</label></td>
         <td><label for="apellido">Apellido</label></td>
         <td><label for="dni">DNI</label></td>
       </tr>
       <tr>
-        <td><input type="text" id="nombre" name="nombre"></td>
-        <td><input type="text" id="apellido" name="apellido"></td>
-        <td><input type="text" id="dni" name="dni" value=""></td>
+        <thead>
+          Inserte Nombre, Apellido y DNI
+        </thead>
+        <td><input type="text" title="nombre"id="nombre" name="nombre"></td>
+        <td><input type="text" title="apellido"id="apellido" name="apellido"></td>
+        <td><input type="text" title="dni"id="dni" name="dni" value=""></td>
       </tr>
       <tr>
+        <thead>
+          Localidad de Nacimiento, provincia y fecha de Nacimiento
+        </thead>
         <td><label for="localidadnacimiento">Localidad de Nacimiento</label></td>
         <td><label for="provincia">Provincia</label></td>
         <td><label for="fechanacimiento">Fecha de Nacimiento</label></td>
       </tr>
       <tr>
+        <thead>
+          Inserte Localidad de Nacimiento,seleccione provincia y escriba fecha de Nacimiento
+        </thead>
         <td><input type="text" id="localidadnacimiento" name="localidadnacimiento" value=""></td>
-        <td><select id="provincia" name="provincia">
-        <option value="Álava">Álava</option>
+        <td><select id="provincia" title="Provincia"name="provincia">
+        <option title="Alava" value="Álava">Álava</option>
         <option value="Albacete">Albacete</option>
         <option value="Alicante">Alicante</option>
         <option value="Almería">Almería</option>
@@ -86,39 +98,50 @@
       <td><input type="date" name="fechanacimiento" value="dd/mm/aaaa"></td>
       </tr>
       <tr>
+        <thead>Direccion y codigo postal</thead>
         <td colspan="2"><label for="direccion" >Dirección</label></td>
         <td><label for="cp">Código Postal</label></td>
       </tr>
       <tr>
-        <td colspan="2"><input type="text" id="direccion" name="direccion" size="50"></td>
-        <td><input type="number" id="cp" name="cp" value="" ></td>
+          <thead>Escriba Direccion y codigo postal</thead>
+        <td colspan="2"><input type="text" id="direccion" title="Direccion" name="direccion" size="50"></td>
+        <td><input type="number" id="cp" title="CP"name="cp" value="" ></td>
       </tr>
     </table>
   </fieldset>
   <fieldset id="formadeacceso">
     <legend>Forma de Acceso</legend>
     <br>
-    <ul>
+    <!-- Formulario para elegir la forma de acceso-->
+    <label for="formadeacces"><ul>
       <li><input type="radio" name="formadeacceso" value="Directo" > Directo</li>
       <li>
         <ul>
-          <li><input type="radio" name="formadeacceso1" value="Bachillerato Log Modalidad" > Bachillerato Log Modalidad <input type="text" name="Bachillerato Log Modalidad" value=""></li>
-          <li><input type="radio" name="formadeacceso1" value="Experimental" > Experimental</li>
-          <li><input type="radio" name="formadeacceso1" value="COU Opción" > COU Opción <input type="text" name="COU Opción" value=""></li>
-          <li><input type="radio" name="formadeacceso1" value="FP2" > FP2</li>
-          <li><input type="radio" name="formadeacceso1" value="Otros" > Otros(especifique) <input type="text" name="Otros" value=""></li>
+          <li><input type="radio" name="formadeacceso1" title="Bachillerato Log Modalidad"value="Bachillerato Log Modalidad" > Bachillerato Log Modalidad <input type="text" name="Bachillerato Log Modalidad" value=""></li>
+          <li><input type="radio" name="formadeacceso1" title="Experimental"value="Experimental" > Experimental</li>
+          <li><input type="radio" name="formadeacceso1" title="COU Opción" value="COU Opción" > COU Opción <input type="text" name="COU Opción" value=""></li>
+          <li><input type="radio" name="formadeacceso1" title="FP2" value="FP2" > FP2</li>
+          <li><input type="radio" name="formadeacceso1" title="Otros" value="Otros" > Otros(especifique) <input type="text" name="Otros" value=""></li>
         </ul>
     </li>
     <li><input type="radio" name="formadeacceso" value="Prueba Libre" > Prueba Libre</li>
-    </ul>
+    </ul></label>
   </fieldset>
   <fieldset id="documentosadjuntados">
     <legend>Documentos</legend>
-    <input type="checkbox" name="fotodopiadni" value="Fotocopia DNI">Fotocopia DNI <input type="checkbox" name="certificadoacademico" value="Certificado Académico">Certificado Académico
-    <br>
-    <input type="checkbox" name="otrosdocumentos" value="Otros documentos(especifique)">Otros documentos(especifique): <input type="text" name="otrosdocumentos" value="">
+    <table>
+      <thead>
+      Marque las opciones que necesite en funcion de los documentos que deba aportar: Fotocopia de DNI, Certificado Académico u Otros Documentos
+      </thead>
+      <tr>
+        <td><input type="checkbox" name="fotodopiadni" title="fotodopiadni" value="Fotocopia DNI">Fotocopia DNI </td>
+        <td><input type="checkbox" name="certificadoacademico" title="certificadoacademico" value="Certificado Académico">Certificado Académico</td>
+      </tr>
+    <td colspan="2"><input type="checkbox" name="otrosdocumentos" value="Otros documentos(especifique)">Otros documentos(especifique): <input type="text" name="otrosdocumentos" value=""></td>
+    </table>
   </fieldset>
-  <input type="submit" name="enviarsolicitud" value="Enviar Solicitud">
+  <p></p>
+  <input type="submit" name="enviarsolicitud" title="Enviar" value="Enviar Solicitud">
 </form>
   </body>
 </html>
