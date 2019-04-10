@@ -1,0 +1,56 @@
+table{
+  text-align: center;
+  font-family: sans-serif;
+  border-collapse:collapse;
+}
+caption{
+background-color: lightpink;
+font-size: 18px;
+}
+td, th {
+  border: 1px solid lightpink;
+  }
+  tr{
+    text-align: center;
+  }
+  p{
+    text-align: center;
+  }
+tbody tr th:first-child {
+  background-color:lightpink;
+  font-size:18px;
+}
+tbody tr:nth-child(6) td:nth-child(2){
+  background-color: lightgreen;
+}
+a:visited{
+  color:purple;
+}
+a:link{
+  color: green;
+  text-decoration: none;
+}
+tr td:nth-child(6):hover,
+tr th:nth-child(6):hover,
+tr td:last-child:hover{
+  background-color: gray;
+  font-size: 1.8em;
+  color: green;
+}
+thead tr td p::first-letter{
+  font-size: 2em;
+  font-weight: bold;
+}
+input:required{
+  border: 1px solid lightgreen;
+  padding: 10px;
+}
+label::after{
+  color: red;
+  content: "*";
+  vertical-align: super;
+}
+input[type="button"]{
+  background-color: lightgreen;
+  color: grey;
+}
