@@ -1,0 +1,29 @@
+*
+{background-color: gray;
+text-align: center;
+
+}
+
+#lol
+{
+border-color: blue;
+border-width: 20px;
+border-style: solid;
+background-color: white;
+}
+.img
+{
+  width:500px;
+  margin:10px;
+}
+.div
+{
+  display:inline-block;
+  border-bottom-style:dashed;
+  border-color: orange;
+  border-width: thick;
+  width:10;
+  background-color:blue
+}
+#lmao
+{margin-top: -260px;}
